@@ -10,7 +10,7 @@
 
 @protocol DieLabelDelegate <NSObject>
 
--(void)rollDieInHand;
+-(void)selectOurDie;
 
 @end
 

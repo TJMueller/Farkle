@@ -31,7 +31,7 @@
         die.isSelected = NO;
         die.delegate = self; 
     }
-    self.dice = [NSMutableArray new];
+    self.dice = [NSMutableArray arrayWithArray:self.dieLabels];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -47,14 +47,16 @@
 }
 
 
--(void)rollDieInHand{
+-(void)selectOurDie{
     for (DieLabel *die in self.dieLabels) {
-        if(die.backgroundColor = [UIColor blueColor]){
+        if(die.backgroundColor == [UIColor blueColor]){
            die.isSelected = YES;
-            [self.dieLabels removeObject:die];
+            [self.dice removeObject:die];
         }
     }
-    [self onRollButtonPressed:<#(id)#>]
+    for (DieLabel *die in self.dice) {
+        NSLog(@"%i", die.dieNumber);
+    }
 }
 
 

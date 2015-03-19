@@ -18,7 +18,7 @@
 -(IBAction)onTapped:(UITapGestureRecognizer *)sender{
     NSLog(@"tapped");
     self.backgroundColor = [UIColor blueColor];
-    [self.delegate rollDieInHand];
+    [self.delegate selectOurDie];
 }
 
 
