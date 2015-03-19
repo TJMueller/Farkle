@@ -41,7 +41,8 @@
 }
 
 - (IBAction)onRollButtonPressed:(id)sender {
-    for (DieLabel *die in self.dieLabels) {
+//    for (DieLabel *die in self.dieLabels) {
+    for (DieLabel * die in self.dice) {
         [die roll];
     }
 }
