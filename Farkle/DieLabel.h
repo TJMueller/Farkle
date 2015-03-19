@@ -19,7 +19,6 @@
 -(void)roll;
 @property int dieNumber;
 @property BOOL isSelected;
-@property CGRect dieLabelFrame;
 @property CGPoint pointOfTap;
 @property (nonatomic, assign) id <DieLabelDelegate> delegate;
 

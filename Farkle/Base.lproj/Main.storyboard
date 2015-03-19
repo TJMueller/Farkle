@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybm-lE-Ws8" customClass="DieLabel">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybm-lE-Ws8" customClass="DieLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -29,7 +29,7 @@
                                     <outletCollection property="gestureRecognizers" destination="ee5-iB-cJg" appends="YES" id="3Q9-nd-4VU"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sic-YH-gNJ" customClass="DieLabel">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sic-YH-gNJ" customClass="DieLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -42,7 +42,7 @@
                                     <outletCollection property="gestureRecognizers" destination="Ygj-Je-XzX" appends="YES" id="oDj-Tt-mfM"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDW-87-Upg" customClass="DieLabel">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDW-87-Upg" customClass="DieLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -55,7 +55,7 @@
                                     <outletCollection property="gestureRecognizers" destination="jxx-6T-ju6" appends="YES" id="TLd-ij-7A6"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59D-1j-X6V" customClass="DieLabel">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59D-1j-X6V" customClass="DieLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -80,7 +80,7 @@
                                     <action selector="onRollButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="M3Q-iC-cZO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFT-7H-R11" customClass="DieLabel">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFT-7H-R11" customClass="DieLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -93,7 +93,7 @@
                                     <outletCollection property="gestureRecognizers" destination="kjm-Aq-MWZ" appends="YES" id="bmE-Gz-eYE"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvY-C2-e6b" customClass="DieLabel">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvY-C2-e6b" customClass="DieLabel">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -147,19 +147,19 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="kjm-Aq-MWZ" userLabel="Tap Gesture Recognizer(1)">
-                    <connections>
-                        <action selector="onTapped:" destination="aFT-7H-R11" id="vln-At-wo1"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="ee5-iB-cJg" userLabel="Tap Gesture Recognizer(2)">
-                    <connections>
-                        <action selector="onTapped:" destination="ybm-lE-Ws8" id="7Dc-i1-Ukv"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <tapGestureRecognizer id="9OP-4M-iHW" userLabel="Tap Gesture Recognizer(3)">
                     <connections>
                         <action selector="onTapped:" destination="ZvY-C2-e6b" id="7bh-dx-Ho0"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Z8g-m4-Ell" userLabel="Tap Gesture Recognizer(6)">
+                    <connections>
+                        <action selector="onTapped:" destination="59D-1j-X6V" id="zva-sM-nca"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="kjm-Aq-MWZ" userLabel="Tap Gesture Recognizer(1)">
+                    <connections>
+                        <action selector="onTapped:" destination="aFT-7H-R11" id="vln-At-wo1"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="Ygj-Je-XzX" userLabel="Tap Gesture Recognizer(4)">
@@ -172,9 +172,9 @@
                         <action selector="onTapped:" destination="JDW-87-Upg" id="W9k-fA-Tyx"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="Z8g-m4-Ell" userLabel="Tap Gesture Recognizer(6)">
+                <tapGestureRecognizer id="ee5-iB-cJg" userLabel="Tap Gesture Recognizer(2)">
                     <connections>
-                        <action selector="onTapped:" destination="59D-1j-X6V" id="zva-sM-nca"/>
+                        <action selector="onTapped:" destination="ybm-lE-Ws8" id="7Dc-i1-Ukv"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

@@ -16,17 +16,9 @@
 }
 
 -(IBAction)onTapped:(UITapGestureRecognizer *)sender{
-//    if (sender.state == UIGestureRecognizerStateEnded) {
-//        self.pointOfTap = [UIGestureRecognizer locationInView:self.view];
-//        
-
-//        self.isSelected = YES;
-//        NSLog(@"%@",self.isSelected? @"YES" : @"NO");
-//        [self.delegate rollDieInHand];
-//   }
+    NSLog(@"tapped");
+    self.backgroundColor = [UIColor blueColor];
     [self.delegate rollDieInHand];
-
-
 }
 
 

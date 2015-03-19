@@ -16,7 +16,7 @@
 @property (strong, nonatomic) IBOutlet DieLabel *dieLabelFour;
 @property (strong, nonatomic) IBOutlet DieLabel *dieLabelFive;
 @property (strong, nonatomic) IBOutlet DieLabel *dieLabelSix;
-@property IBOutletCollection(DieLabel) NSArray *dieLabels;
+@property IBOutletCollection(DieLabel) NSMutableArray *dieLabels;
 @property NSMutableArray *dice;
 
 @end
@@ -29,11 +29,15 @@
     for (DieLabel *die in self.dieLabels) {
         die.backgroundColor = [UIColor colorWithRed:1.000 green:0.419 blue:0.076 alpha:1.000];
         die.isSelected = NO;
-        die.dieLabelFrame = die.frame;
         die.delegate = self; 
     }
     self.dice = [NSMutableArray new];
-    [self findDieLabelUsingPoint:self.dieLabelOne.center];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
 }
 
 - (IBAction)onRollButtonPressed:(id)sender {
@@ -44,20 +48,16 @@
 
 
 -(void)rollDieInHand{
-
-
-}
-
-
-- (void)findDieLabelUsingPoint:(CGPoint)point {
     for (DieLabel *die in self.dieLabels) {
-        if (CGRectContainsPoint(die.dieLabelFrame, point))
-            NSLog(@"%f", die.dieLabelFrame);
-        {
-            die.backgroundColor = [UIColor blueColor];
+        if(die.backgroundColor = [UIColor blueColor]){
+           die.isSelected = YES;
+            [self.dieLabels removeObject:die];
         }
     }
+    [self onRollButtonPressed:<#(id)#>]
 }
+
+
 
 
 
