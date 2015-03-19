@@ -9,7 +9,7 @@
 #import "RootViewController.h"
 #import "DieLabel.h"
 
-@interface RootViewController () <DieLabelDelegate>
+@interface RootViewController () <DieLabelDelegate, UIGestureRecognizerDelegate>
 @property (strong, nonatomic) IBOutlet DieLabel *dieLabelOne;
 @property (strong, nonatomic) IBOutlet DieLabel *dieLabelTwo;
 @property (strong, nonatomic) IBOutlet DieLabel *dieLabelThree;
@@ -28,9 +28,12 @@
 
     for (DieLabel *die in self.dieLabels) {
         die.backgroundColor = [UIColor colorWithRed:1.000 green:0.419 blue:0.076 alpha:1.000];
+        die.isSelected = NO;
+        die.dieLabelFrame = die.frame;
         die.delegate = self; 
     }
     self.dice = [NSMutableArray new];
+    [self findDieLabelUsingPoint:self.dieLabelOne.center];
 }
 
 - (IBAction)onRollButtonPressed:(id)sender {
@@ -42,8 +45,19 @@
 
 -(void)rollDieInHand{
 
+
 }
 
+
+- (void)findDieLabelUsingPoint:(CGPoint)point {
+    for (DieLabel *die in self.dieLabels) {
+        if (CGRectContainsPoint(die.dieLabelFrame, point))
+            NSLog(@"%f", die.dieLabelFrame);
+        {
+            die.backgroundColor = [UIColor blueColor];
+        }
+    }
+}
 
 
 
