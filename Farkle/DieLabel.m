@@ -16,6 +16,7 @@
 }
 
 -(IBAction)onTapped:(UITapGestureRecognizer *)sender{
+    [self.delegate rollDieInHand];
 }
 
 @end

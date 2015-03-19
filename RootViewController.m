@@ -9,7 +9,7 @@
 #import "RootViewController.h"
 #import "DieLabel.h"
 
-@interface RootViewController ()
+@interface RootViewController () <DieLabelDelegate>
 @property (strong, nonatomic) IBOutlet DieLabel *dieLabelOne;
 @property (strong, nonatomic) IBOutlet DieLabel *dieLabelTwo;
 @property (strong, nonatomic) IBOutlet DieLabel *dieLabelThree;
@@ -17,6 +17,7 @@
 @property (strong, nonatomic) IBOutlet DieLabel *dieLabelFive;
 @property (strong, nonatomic) IBOutlet DieLabel *dieLabelSix;
 @property IBOutletCollection(DieLabel) NSArray *dieLabels;
+@property NSMutableArray *dice;
 
 @end
 
@@ -24,9 +25,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     for (DieLabel *die in self.dieLabels) {
         die.backgroundColor = [UIColor colorWithRed:1.000 green:0.419 blue:0.076 alpha:1.000];
+        die.delegate = self; 
     }
+    self.dice = [NSMutableArray new];
 }
 
 - (IBAction)onRollButtonPressed:(id)sender {
@@ -34,6 +38,13 @@
         [die roll];
     }
 }
+
+
+-(void)rollDieInHand{
+
+}
+
+
 
 
 @end

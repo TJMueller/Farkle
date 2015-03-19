@@ -9,16 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @protocol DieLabelDelegate <NSObject>
-@optional
 
-
+-(void)rollDieInHand;
 
 @end
-
 
 @interface DieLabel : UILabel
 
 -(void)roll;
 @property int dieNumber;
+@property (nonatomic, assign) id <DieLabelDelegate> delegate;
 
 @end
